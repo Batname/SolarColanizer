@@ -19,4 +19,9 @@ class SOLARCOLANIZER_API AEarth : public ARegularPlanet
 	
 public:
 	AEarth();
+
+	// Begin Actor Interface
+	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaSoconds) override;
+	// End Actor Interface
 };
