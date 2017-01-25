@@ -3,6 +3,6 @@
 #include "SolarColanizer.h"
 #include "Earth.h"
 
-
-
-
+AEarth::AEarth()
+{
+}

@@ -6,14 +6,17 @@
 #include "Earth.generated.h"
 
 /**
- * 
+ * Earth planet class for geometry and specific settings
  */
-UCLASS()
+UCLASS(Blueprintable)
 class SOLARCOLANIZER_API AEarth : public ARegularPlanet
 {
 	GENERATED_BODY()
+
+	/** The mesh component */
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Mesh, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* MeshComponent;
 	
-	
-	
-	
+public:
+	AEarth();
 };
