@@ -82,6 +82,10 @@ protected:
 	/** Property for pay for ocupation */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "SpaceObject", meta = (AllowPrivateAccess = "true"))
 	float PaymentForOcupied;
+
+	/** Resources for SpaceObject */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SpaceObject", meta = (AllowPrivateAccess = "true"))
+	FSpaceObjectRecources SpaceObjectRecources;
 private:
 	
 };
