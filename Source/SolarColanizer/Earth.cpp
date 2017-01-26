@@ -6,8 +6,8 @@
 AEarth::AEarth()
 {
 	// Create mesh component
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> EarthMesh(TEXT("/Game/TwinStick/Meshes/TwinStickUFO.TwinStickUFO"));
-	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> EarthMesh(TEXT("/Game/TwinStick/Meshes/EarthMesh.EarthMesh"));
+	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("EarthMesh"));
 	RootComponent = MeshComponent;
 	MeshComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
 	MeshComponent->SetStaticMesh(EarthMesh.Object);
