@@ -11,6 +11,12 @@ AEarth::AEarth()
 	RootComponent = MeshComponent;
 	MeshComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
 	MeshComponent->SetStaticMesh(EarthMesh.Object);
+
+	// setup resorces
+	FSpaceObjectRecources ObjecAddition;
+	ObjecAddition.Gas = 2400.0f;
+	ObjecAddition.Oil = 1200.0f;
+	SpaceObjectRecources = ObjecAddition + Super::SpaceObjectRecources;
 }
 
 void AEarth::BeginPlay()

@@ -14,6 +14,12 @@ class SOLARCOLANIZER_API APlanet : public ASpaceObject
 	GENERATED_BODY()
 	
 	
-	
-	
+public:
+	// Constructor
+	APlanet();
+
+protected:
+
+private:
+
 };

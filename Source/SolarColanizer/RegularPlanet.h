@@ -14,6 +14,12 @@ class SOLARCOLANIZER_API ARegularPlanet : public APlanet
 	GENERATED_BODY()
 	
 	
-	
+public:
+	// Constructor
+	ARegularPlanet();
+
+protected:
+
+private:
 	
 };

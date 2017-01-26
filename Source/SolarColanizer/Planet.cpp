@@ -4,5 +4,12 @@
 #include "Planet.h"
 
 
-
+APlanet::APlanet()
+{
+	// setup resorces
+	FSpaceObjectRecources ObjecAddition;
+	ObjecAddition.Gas = 500.0f;
+	ObjecAddition.Oil = 300.0f;
+	SpaceObjectRecources = ObjecAddition + Super::SpaceObjectRecources;
+}
 

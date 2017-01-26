@@ -73,6 +73,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "SpaceObject")
 	float GetPaymentForOcupied() const { return PaymentForOcupied; }
 
+	/** Public getter, for example */
+	FORCEINLINE const FSpaceObjectRecources& GetSpaceObjectRecources() const { return SpaceObjectRecources; }
+
 protected:
 
 	/** Property for check character energy with planet space object energy */
@@ -86,6 +89,6 @@ protected:
 	/** Resources for SpaceObject */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SpaceObject", meta = (AllowPrivateAccess = "true"))
 	FSpaceObjectRecources SpaceObjectRecources;
+
 private:
-	
 };

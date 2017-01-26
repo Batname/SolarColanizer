@@ -13,9 +13,6 @@ ASpaceObject::ASpaceObject()
 	// Setup properties
 	MinEnergyForOcupied = 100.0f;
 	PaymentForOcupied = MinEnergyForOcupied / 2;
-
-	// setup recources by default
-	SpaceObjectRecources = FSpaceObjectRecources();
 }
 
 // Called when the game starts or when spawned
